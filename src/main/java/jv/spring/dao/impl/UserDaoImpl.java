@@ -46,7 +46,7 @@ public class UserDaoImpl implements UserDao {
                     "FROM User", User.class);
             return movies.getResultList();
         } catch (HibernateException e) {
-            throw new RuntimeException("Error retrieving all movies  ", e);
+            throw new RuntimeException("Error retrieving all users ", e);
         }
     }
 }
